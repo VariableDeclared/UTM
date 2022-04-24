@@ -80,7 +80,7 @@ jobs:
           path: UTM.xcarchive.tgz
   build-universal:
     name: Build UTM (macOS Universal)
-    runs-on: macos-11
+    runs-on: macos-12
     needs: build
     if: github.event_name == 'release' || github.event.inputs.test_release == 'true'
     steps:
